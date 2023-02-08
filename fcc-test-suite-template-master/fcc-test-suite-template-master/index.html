@@ -2,76 +2,81 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <h1>Survey form</h1>
-    <h3>Thank you for taking the time to help us improve the platform</h3>
-    <p>This webpage is for submitting a form</p>
-    <form id="survey-form" method="get">
-      <div class="block">
-          <div><label for="name" id="name-label">Name</label></div><br/>
-          <div><input id="name" type="text"required placeholder="Enter your name"></input></div><br/>
-      
-      </div>
+    
+    <div id="container">
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <h1 id="title">Survey form</h1>
+        <h3>Thank you for taking the time to help us improve the platform</h3>
+        <p id="description">This webpage is for submitting a form</p>
+        <form id="survey-form" method="get">
+          <div class="block">
+              <div><label for="name" id="name-label">Name</label></div><br/>
+              <div><input id="name" type="text"required placeholder="Enter your name"></input></div><br/>
+          
+          </div>
 
-      <div class="block">
-        <div><label for="email" id="email-label">Email</label></div><br/>
-        <div><input id="email" type="email" pattern=".+@globex\.com" required placeholder="enter your email"></input></div> <br/>
-      
-      </div>
+          <div class="block">
+            <div><label for="email" id="email-label">Email</label></div><br/>
+            <div><input id="email" type="email" pattern=".+@globex\.com" required placeholder="enter your email"></input></div> <br/>
+          
+          </div>
 
-      <div class="block">
-        <div><label for="number" id="number-label">Age</label></div><br/>
-        <div><input id="number" type="number" min="0" max="100" placeholder="Age"></input></div><br/>
-      </div>
+          <div class="block">
+            <div><label for="number" id="number-label">Age</label></div><br/>
+            <div><input id="number" type="number" min="0" max="100" placeholder="Age"></input></div><br/>
+          </div>
 
-      <div>
-        <select id="dropdown">
-          <option value="Student">Student</option>
-          <option value="Full time job">Full time job</option>
-          <option value="Full time learner">Full time learner</option>
-        </select>
+          <div>
+            <select id="dropdown">
+              <option value="Student">Student</option>
+              <option value="Full time job">Full time job</option>
+              <option value="Full time learner">Full time learner</option>
+            </select>
 
-      </div>
-      <br/>
-      <div>
-        <h4>Did you like our website?</h4>
-        <label for="radio-1">Definetely</label>
-        <input type="radio" id="radio-1" name="button" value="Definetely" checked>
-        <label for="radio-2">Maybe</label>
-        <input type="radio" id="radio-2" name="button" value="Maybe">
+          </div>
+          <br/>
+          <div>
+            <h4>Did you like our website?</h4>
+            <label for="radio-1">Definetely</label>
+            <input type="radio" id="radio-1" name="button" value="Definetely" checked>
+            <label for="radio-2">Maybe</label>
+            <input type="radio" id="radio-2" name="button" value="Maybe">
 
-      </div>
+          </div>
 
-      <div><br/>
-        <h4>What do you would want to become</h4>
-        <input type="checkbox" id="checkbox-1" name="checkbox-1" value="Front-end developper">
-        <label for="checkbox-1"> Front-end developper</label><br>
+          <div><br/>
+            <h4>What do you would want to become</h4>
+            <input type="checkbox" id="checkbox-1" name="checkbox-1" value="Front-end developper">
+            <label for="checkbox-1"> Front-end developper</label><br>
 
-        <input type="checkbox" id="checkbox-2" name="checkbox-2" value="Back-end Developper">
-        <label for="checkbox-2"> Back-end Developper</label><br>
+            <input type="checkbox" id="checkbox-2" name="checkbox-2" value="Back-end Developper">
+            <label for="checkbox-2"> Back-end Developper</label><br>
 
-        <input type="checkbox" id="checkbox-3" name="checkbox-3" value="DevOps Developper">
-        <label for="checkbox-3"> DevOps Developper</label><br>
+            <input type="checkbox" id="checkbox-3" name="checkbox-3" value="DevOps Developper">
+            <label for="checkbox-3"> DevOps Developper</label><br>
 
-      </div>
-      <br/>
-      <div>
-        <p>Any comments or suggestions?</p>
-        <textarea id="comments" name="textarea" rows="4" cols="50">
+          </div>
+          <br/>
+          <div>
+            <p>Any comments or suggestions?</p>
+            <textarea id="comments" name="textarea" rows="4" cols="50">
+            
+            </textarea>
+          </div>
+
+          </div><br/>
+          <button class="btn btn-outline-dark" id="submit" type="submit" form="survey-form" value="Submit">Submit</button>
+        </form>
         
-        </textarea>
-      </div>
-
-      </div><br/>
-      <button type="submit" form="survey-form" value="Submit">Submit</button>
-    </form>
-    
-    
-    <script  src="js/index.js"></script>
+        
+        <script  src="js/index.js"></script>
+  </div>
   </body>
 </html>

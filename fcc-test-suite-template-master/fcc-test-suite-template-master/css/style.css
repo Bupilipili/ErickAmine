@@ -1,0 +1,13 @@
+body {
+    color:black;
+    font-family: cursive;    
+    display:flex;
+    background-color: #cccccc;
+    align-content: center;
+    flex-direction: column;
+
+   }
+
+#container{
+    align-self: center;
+}
