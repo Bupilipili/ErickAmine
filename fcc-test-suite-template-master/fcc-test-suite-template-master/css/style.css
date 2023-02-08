@@ -11,3 +11,10 @@ body {
 #container{
     align-self: center;
 }
+.radio {
+    position: relative;
+    ;
+}
+#title{
+    position:relative;
+}
