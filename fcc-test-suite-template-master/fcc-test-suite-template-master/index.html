@@ -11,24 +11,62 @@
     <h1>Survey form</h1>
     <h3>Thank you for taking the time to help us improve the platform</h3>
     <p>This webpage is for submitting a form</p>
-    <form id="survey-form">
+    <form id="survey-form" method="get">
       <div class="block">
-        <div><label for="name" id="name-label">Name</label></div>
-        <div><input id="name" type="text"required placeholder="Enter your name"></input></div>
+          <div><label for="name" id="name-label">Name</label></div><br/>
+          <div><input id="name" type="text"required placeholder="Enter your name"></input></div><br/>
       
       </div>
 
       <div class="block">
-      <div><label for="email" id="email-label">Email</label></div>
-      <div><input id="email" type="email" pattern=".+@globex\.com" required placeholder="enter your email"></input></div>
+        <div><label for="email" id="email-label">Email</label></div><br/>
+        <div><input id="email" type="email" pattern=".+@globex\.com" required placeholder="enter your email"></input></div> <br/>
       
       </div>
 
       <div class="block">
-      <div><label for="number" id="number-label">Age</label></div>
-      <div><input id="number" type="number" min="0" max="100" placeholder="Age"></input></div>
-      
+        <div><label for="number" id="number-label">Age</label></div><br/>
+        <div><input id="number" type="number" min="0" max="100" placeholder="Age"></input></div><br/>
       </div>
+
+      <div>
+        <select id="dropdown">
+          <option value="Student">Student</option>
+          <option value="Full time job">Full time job</option>
+          <option value="Full time learner">Full time learner</option>
+        </select>
+
+      </div>
+      <br/>
+      <div>
+        <label for="radio-1">Definetely</label>
+        <input type="radio" id="radio-1" name="button" value="Definetely" checked>
+        <label for="radio-2">Maybe</label>
+        <input type="radio" id="radio-2" name="button" value="Maybe">
+
+      </div>
+
+      <div><br/>
+        <input type="checkbox" id="checkbox-1" name="checkbox-1" value="Front-end developper">
+        <label for="checkbox-1"> Front-end developper</label><br>
+
+        <input type="checkbox" id="checkbox-2" name="checkbox-2" value="Back-end Developper">
+        <label for="checkbox-2"> Back-end Developper</label><br>
+
+        <input type="checkbox" id="checkbox-3" name="checkbox-3" value="DevOps Developper">
+        <label for="checkbox-3"> DevOps Developper</label><br>
+
+      </div>
+      <br/>
+      <div>
+        <p>Any comments or suggestions?</p>
+        <textarea id="comments" name="textarea" rows="4" cols="50">
+        
+        </textarea>
+      </div>
+
+      </div><br/>
+      <button type="submit" form="survey-form" value="Submit">Submit</button>
     </form>
     
     
